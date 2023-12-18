@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Out of Stock Items</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    h2{
+    background-color:yellow;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">Shiridi Sai</span>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="menu">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+        <li onclick="openQRCode()">QR Code</li>
+        <li>Items</li>
+        <li><a href="OStk.html">Out of Stock</a></li>
+        <li>Demand Items</li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Out of Stock Items</h2>
+    <p>Item 1 - $10</p>
+    <p>Item 2 - $15</p>
+    <p>Item 3 - $20</p>
+    <!-- Add more items as needed -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

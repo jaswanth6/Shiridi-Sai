@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: none;
+}
+
+.qrcode {/* Make the image cover the whole screen */
+  object-fit: cover;
+   height:600px;/* Ensure the image maintains its aspect ratio while covering the screen */
+  display: none;
+  margin:auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu li {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color:red;
+  }
+
+  .qrcode {
+    display: none;
+  }
+}

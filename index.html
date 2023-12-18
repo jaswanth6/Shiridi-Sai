@@ -1,1 +1,47 @@
-<h1>Hello Guru</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Shiridi Sai Mobile Website</title>
+</head>
+<body>
+
+  <header>
+    <span class="logo">Shiridi Sai</span>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="menu">
+      <ul>
+        <li onclick="openQRCode()">QR Code</li>
+        <li>Items</li>
+        <li><a href="OStk.html">Out of Stock</a></li>
+        <li>Demand Items</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- QR Code Image -->
+  <img class="qrcode" src="QR_code.png" alt="QR Code">
+
+<script>
+    function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
+    }
+
+    function openQRCode() {
+      var qrcode = document.querySelector('.qrcode');
+      qrcode.style.display = 'block';
+
+      // Hide the menu after clicking on "QR Code"
+      var menu = document.querySelector('.menu');
+      menu.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
