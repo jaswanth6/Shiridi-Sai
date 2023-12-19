@@ -1,40 +1,54 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-}
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #333; /* Change the background color as needed */
+            color: white;
+        }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
+        .logo-container {
+            width: 50px; /* Adjust the size as needed */
+            height: 50px; /* Adjust the size as needed */
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 10px; /* Adjust the margin as needed */
+        }
 
+        .logo-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
 .menu-icon {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
 }
 
 .menu-icon div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
 .menu {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
+    display: none;
+    /* Add your menu styles here */
 }
+
 
 .menu ul {
   list-style-type: none;
@@ -55,7 +69,7 @@ header {
 
 @media (max-width: 768px) {
   .logo {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 
   .menu-icon {
