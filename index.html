@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   <title>Shiridi Sai Mobile Website</title>
   <style>
             body {
@@ -37,7 +43,59 @@
             font-size: 1.5em;
             font-weight: bold;
         }
-  </style>
+        body {
+        font-family: "Sono", sans-serif;
+      }
+      .pricing-container{
+        display: flex;
+        gap:10px;
+        height:60vh;
+        align-items: center;
+        justify-content: space-between;
+     }
+     li{
+      list-style-type: none;
+     }
+     .plan-title{
+      font-size: 25px;
+      font-weight: 600;
+     }
+     .plan-price{
+      font-size: 50px;
+      font-weight: 900;
+     }
+     .pricing-plan{
+      background-color: #f2f2f2;
+      max-width: 400px;
+      padding: 20px;
+      height: 280px;
+      text-align: center;
+      
+      border-radius: 5px;
+     }
+     li{
+      margin: 20px;
+      text-align: left;
+      position: relative;
+      left:14%;
+     }
+     .plan-button{
+      background-color:
+#ff6600;
+      height:30px;
+      color:white;
+      border: none;
+     }
+
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height:100%;
+        }
+      }
+    </style>
 </head>
 <body>
 
@@ -61,10 +119,38 @@
       </ul>
     </div>
   </header>
-
-  <!-- QR Code Image -->
-  <img class="qrcode" src="QR_code.png" alt="QR Code">
-
+      <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$11.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 No Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
 <script>
     function toggleMenu() {
       var menu = document.querySelector('.menu');
