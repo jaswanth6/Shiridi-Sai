@@ -4,91 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="../tindog/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .container{
             display: flex;
-            gap:50px;
+            justify-content: space-evenly;
         }
         ol,ul{
             padding: 10px;
+            list-style: none;
         }
-        ul>li{
-            list-style-type: none;
+        section{
+            margin-bottom:20px;
+        }
+        img{
+            border-radius: 40%;
+        }
+        h2,p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       #skills{
+            background-color: orange;
+        }
+        #skills h2{
+            background-color: rgb(15,89,24);
         }
     </style>
 </head>
 <body>
-    <section id="profile">
-        <img src="./profile_photo.png" height="100">
+    <section id="profile" class="gradient-background">
+        <div class="container col-xxl-8 px-4 " bis_skin_checked="1">
+            <div class="row flex-lg-row-reverse align-items-center g-5" bis_skin_checked="1">
+              <div class="col-10 col-sm-12 col-lg-4 my-50" bis_skin_checked="1">
+                <img src="./profile_photo.png" class="d-block mx-lg-auto photo" alt="Bootstrap Themes" height="200" loading="lazy">
+              </div>
+              <div class="col-lg-8" bis_skin_checked="1">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Jaswanth Areti</h1>
+                <p class="lead">9989991552</p>
+                <p class="lead">jaswanthareti@gmail.com</p>
+                <p class="lead mb-25">linkedin.com/jaswanthareti</p>
+              </div>
+            </div>
+          </div>
     </section>
-    <section id="summary">
-        <h2>Summary</h2>
-        <p>To leverage my passion for learning and technology to drive innovation and growth while delivering high-quality work in a timely and efficient manner</p>
+    <section id="summary" class="gradient-background1">
+        <h2 style="background-color: green;">Summary</h2>
+        <p class="container">To leverage my passion for learning and technology to drive innovation and growth while delivering high-quality work in a timely and efficient manner</p>
     </section>
-    <section id="education">
-        <h2>Education</h2>
-        <table border="5px solid black">
-            <tr>
-                <th>Qualification</th>
-                <th>Institution</th>
-                <th>Year of Study</th>
-                <th>C.G.P.A/Marks</th>
-            </tr>
-            <tr>
-                <td>B.Tech</td>
-                <td>VIT Bhimavaram</td>
-                <td>2020-present</td>
-                <td>8.11 C.G.P.A</td>
-            </tr>
-            <tr>
-                <td>Intermediate</td>
-                <td>Sasi Velivennu</td>
-                <td>2018-2020</td>
-                <td>969 Marks</td>
-            </tr>
-            <tr>
-                <td>10th</td>
-                <td>Sadhana School Bavaipalem</td>
-                <td>2018</td>
-                <td>422 Marks</td>
-            </tr>
-        </table>
-    </section>
-    <section id="skills">
+    <section id="skills" class="gradient-background1">
         <h2>Skills</h2>
         <div class="container">
         <div class="tc">
             <h3>Technical Skills</h3>
-        <ol>
+        <ul>
             <li>Python</li>
             <li>HTML,CSS</li>
             <li>SQL</li>
             <li>Numpy,Pandas</li>
             <li>Excel</li>
             <li>Flask</li>
-        </ol>
+        </ul>
         </div>
         <div class="soft">
             <h3>Soft Skills</h3>
-            <ol>
+            <ul>
                 <li>Team Player</li>
                 <li>Leadership Qualities</li>
                 <li>Time Management</li>
                 <li>Strategical Thinking</li>
-            </ol>
+            </ul>
         </div>
         </div>
-    </section>
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Playing chess</li>
-            <li>Reading Books</li>
-            <li>Walking</li>
-        </ul>
     </section>
     <section id="footer">
         &copy Jaswanth Areti
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
