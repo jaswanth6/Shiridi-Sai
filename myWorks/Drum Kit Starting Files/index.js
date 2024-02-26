@@ -55,4 +55,7 @@ function makesound(name){
 function buttonActive(currentKey){
     var buttonAnime=document.querySelector('.'+currentKey)
     buttonAnime.classList.add('pressed');
+    setTimeout(function(){
+        buttonAnime.classList.remove('pressed')
+    },100);
 }
