@@ -1,100 +1,81 @@
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: #333; /* Change the background color as needed */
-            color: white;
-        }
-
-        .logo-container {
-            width: 50px; /* Adjust the size as needed */
-            height: 50px; /* Adjust the size as needed */
-            overflow: hidden;
-            border-radius: 50%;
-            margin-right: 10px; /* Adjust the margin as needed */
-        }
-
-        .logo-img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-.menu-icon {
-    cursor: pointer;
-    position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    right: 10px; /* Adjust the right position as needed */
+body {
+  text-align: center;
+  background-color: #283149;
 }
 
-.menu-icon div {
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
 }
 
-.menu {
-    display: none;
-    /* Add your menu styles here */
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
 }
 
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.w {
+  background-image: url("./images/crash.png");
 }
 
-.menu li {
-  display: none;
+.a {
+  background-image: url("./images/kick.png");
 }
 
-.qrcode {/* Make the image cover the whole screen */
-  object-fit: cover;
-   height:600px;/* Ensure the image maintains its aspect ratio while covering the screen */
-  display: none;
-  margin:auto;
+.s {
+  background-image: url("./images/snare.png");
 }
 
-@media (max-width: 768px) {
-  .logo {
-    font-size: 2em;
-  }
+.d {
+  background-image: url("./images/tom1.png");
+}
 
-  .menu-icon {
-    display: block;
-  }
+.j {
+  background-image: url("./images/tom2.png");
+}
 
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+.k {
+  background-image: url("./images/tom3.png");
+}
 
-  .menu li {
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-    color:red;
-  }
+.l {
+  background-image: url("./images/tom4.png");
+}
 
-  .qrcode {
-    display: none;
-  }
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
 }
